@@ -1,0 +1,26 @@
+:root{--leaf:#1f5c3f;--leaf-dark:#143d2a;--saffron:#f2b705;--chili:#c8321e;--bg:#f5f8f3;--ink:#17261f}
+body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,h4,h5,.navbar-brand{font-family:'Bitter',serif}
+.site-nav{background:var(--leaf-dark)}
+.site-nav .nav-link.active{color:var(--saffron)}
+.btn-saffron{background:var(--saffron);color:#2b2100;font-weight:600;border:0}
+.btn-saffron:hover{background:#ffd23f}
+.btn-success{background:var(--leaf);border-color:var(--leaf)}
+.btn-outline-success{color:var(--leaf);border-color:var(--leaf)}
+.btn-outline-success:hover{background:var(--leaf);border-color:var(--leaf)}
+.slide{min-height:70vh;align-items:center;color:#fff}
+.carousel-item.active.slide{display:flex}
+.slide h1{font-size:clamp(2rem,5vw,3.6rem);max-width:14em}
+.slide p{font-size:1.2rem;margin-bottom:1.5rem}
+.s1{background:linear-gradient(120deg,#143d2a,#1f5c3f 60%,#3c7d4f)}
+.s2{background:linear-gradient(120deg,#7a2e12,#c8321e 70%,#e5772b)}
+.s3{background:linear-gradient(120deg,#5b3d00,#b07d00 70%,#f2b705)}
+.recipe-card{border:1px solid #dbe5d8;border-radius:12px;transition:transform .2s}
+.recipe-card:hover{transform:translateY(-4px)}
+.recipe-icon{font-size:2.4rem}
+.badge-cat{background:#e3efe0;color:var(--leaf-dark)}
+.site-footer{background:var(--leaf-dark);color:#cfe0d3}
+#rmSteps li,#rmIngredients li{margin-bottom:.3rem}
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
+.fade-in.show{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fade-in{opacity:1;transform:none;transition:none}}
